@@ -31,3 +31,24 @@ TODOs (may never get done)
 [1]: https://classic.warcraftlogs.com/character/id/64444943
 [2]: https://thatsmybis.com/
 [3]: https://www.warcraftlogs.com/v1/docs
+
+## Running
+> Note: Assuming understanding of Linux commandline, either via MacOS, Windows WLS,
+> or actual Linux.
+
+1. Create a file in this directory called `.env`.
+2. Add the following values...
+   ```
+    TMB_GUILD_GROUP_NAME=<Raid Group Name>
+    TMB_OKAY_ALTS=<Comma seperated list of names of Alts to be treated as mains>
+    WARCRAFT_LOGS_KEY=<warcraft logs v1 api key>
+    WARCRAFT_SERVER=<wow server name>
+    WARCRAFT_REGION=<wow server region>
+    ```
+3. Visit [TMB][2] and go to "Guild > Exports > Giant JSON blob" and click
+   "Download JSON" and save it in a file in this directory.
+4. Run the script as follows:
+   ```
+   $ env $(cat .env) ruby ./filter.rb <downloaded json file>
+   ```
+5. You can then import the generated csv file to Google Sheets.

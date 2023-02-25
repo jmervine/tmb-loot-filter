@@ -4,7 +4,6 @@ require 'json'
 require 'pry'
 require 'net/http'
 
-TMB_GUILD_URL     = ENV.fetch('TMB_GUILD_URL')
 RAID_GROUP        = ENV.fetch('TMB_GUILD_GROUP_NAME')
 OKAY_ALTS         = ENV.fetch('TMB_OKAY_ALTS').split(',')
 WARCRAFT_LOGS_KEY = ENV.fetch('WARCRAFT_LOGS_KEY')
