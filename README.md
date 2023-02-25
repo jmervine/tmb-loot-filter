@@ -1,5 +1,9 @@
 # TMB Filterer
 
+> WARNING: This is a script, not a fully fleshed out application. It was created
+> quickly for a purpose. I'm only putting it on Github to share with the folks that
+> this filters data for. If you're not them, it may not make a whole lot of sense.
+
 This was created by [Hound][1] on a whim, and very quicly. If you have comment's or
 feedback, leave a Github issue.  It's intended to help Loot Council make informed
 decisions, with real numbers.
